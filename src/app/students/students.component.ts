@@ -10,6 +10,7 @@ import { STUDENTS } from '../mock-students';
 export class StudentsComponent implements OnInit {
 
   students = STUDENTS;
+  selectedStudent: Student;
 
   student: Student = {
     id: 1;
@@ -23,8 +24,8 @@ export class StudentsComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSelectedStudent() {
-    
+  onSelectedStudent(student) {
+    this.selectedStudent = student;
   }
 
 
