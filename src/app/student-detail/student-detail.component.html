@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+
+<div *ngIf='prosledjeni'>
+  <h2>{{ prosledjeni.name }} details;</h2>
+  <div>
+    <div>{{ prosledjeni.id }}</div>
+    <div class="">
+      {{prosledjeni.gender}}
+    </div>
+    <div class="">
+      {{prosledjeni.description}}
+    </div>
+    <div>
+      <input type="text" name="" value="" [(ngModel)]='prosledjeni.name'>
+      {{ prosledjeni.name }}
+    </div>
+  </div>
+</div>

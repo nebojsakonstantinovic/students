@@ -10,25 +10,4 @@
   </ul>
 </div>
 
-
-
-
-
-
-
-<div *ngIf='selectedStudent'>
-  <h2>{{ selectedStudent.name }} details;</h2>
-  <div>
-    <div>{{ selectedStudent.id }}</div>
-    <div class="">
-      {{selectedStudent.gender}}
-    </div>
-    <div class="">
-      {{selectedStudent.description}}
-    </div>
-    <div>
-      <input type="text" name="" value="" [(ngModel)]='selectedStudent.name'>
-      {{ selectedStudent.name }}
-    </div>
-  </div>
-</div>
+<app-student-detail [prosledjeni]="selectedStudent"></app-student-detail>
