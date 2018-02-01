@@ -13,8 +13,10 @@ export class StudentsComponent implements OnInit {
   selectedStudent: Student;
 
   student: Student = {
-    id: 1;
-    name: 'Petar Petrovic'
+    id: 1,
+    name: 'Petar Petrovic',
+    gender: 'Male',
+    description: 'cool'
   };
   // student = 'Petar Petrovic'
 
