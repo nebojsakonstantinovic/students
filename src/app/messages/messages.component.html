@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+
+<h2>Ovo su sve poruke</h2>
+
+<button (click)="messageService.clearMessages()" type="button" name="button">Obrisi poruke</button>
+
+  <ul>
+    <li *ngFor='let poruka of messageService.messages'>{{poruka}}</li>    <!-- let je local scope -->
+  </ul>
